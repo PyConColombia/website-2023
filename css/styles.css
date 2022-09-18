@@ -7,6 +7,27 @@
   text-underline-offset: 10px;
 }
 
+.section-container1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.section-container1{
+  margin-top: 20%;
+}
+
+.section-container2 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.section-container2{
+  margin-top: 0px;
+}
+
+
 .card-body a:hover{
   color: #fff;
 }
@@ -83,18 +104,17 @@
     font-family: "Montserrat", sans-serif !important;
   }
   body {
-    background: url("../img/background.webp") top center repeat-y;
-    background-attachment: fixed;
+    background: url("../img/general_resources/background-img.png");
+    background-repeat: no-repeat;
     background-size: 100% auto;
   }
   .asteroids {
     background: url("../img/asteroids.png") top center repeat-y;
     background-size: 100% auto;
   }
-  .section-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 1100px;
+
+  .banner-section{
+    margin-top: 1%;
   }
 
   .keynote-container{
@@ -192,9 +212,9 @@
   .text-container p {
     font-size: 52px;
     font-weight: 700;
-    text-align: right;
+    text-align: center;
     text-shadow: 0 5px 10px rgba(9, 5, 56, 0.9);
-    padding: 150px 0 130px;
+    padding: 50px 0 130px;
   }
   .text-container p span {
     display: block;
@@ -389,6 +409,10 @@
 
 
   @media (max-width: 991px) {
+    .section-container1{
+      margin-top: 10%;
+    }
+
 
     .navbar {
       background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4))
@@ -520,6 +544,14 @@
     }
   }
   @media (max-width: 767px) {
+
+    .section-container {
+      margin-top: 50px;
+      display: block;
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+  
     h1 span {
       font-size: 25px;
       font-weight: 700;
@@ -528,8 +560,8 @@
       background-size: contain;
     }
     .text-container p {
-      font-size: 20px;
-      padding: 50px 0;
+      font-size: 12px;
+      padding: 20px 0;
       padding-right: 10px;
     }
     .text-container p span {
@@ -538,20 +570,20 @@
     }
 
     .text-container2 p {
-        font-size: 20px;
+        font-size: 12px;
         padding: 0px 0;
     }
       .text-container2 p span {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 300;
     }
 
     .text-container2 li {
-        font-size: 20px;
+        font-size: 12px;
         padding: 0px;
     }
       .text-container2 li span {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 300;
     }
 
@@ -1708,15 +1740,14 @@
 
 
 .block-left {
-    position: fixed;
-    left: 10%;
+    position:absolute;
+    left: 0%;
     z-index: 999;
 }
 
 .block-right {
-    position: fixed;
-    right: 10%;
-    bottom: 0;
+    position: absolute;
+    right: 0%;
     z-index: 999;
 }
 
