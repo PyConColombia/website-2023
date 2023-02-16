@@ -1,75 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-<!--FIRST-SECTION-->
 
+{% block body %}
+
+<!--FIRST-SECTION-->
 <div class="first-section">
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bd-navbar">
-
-    <div class="container-fluid">
-      <!--
-          <a class="navbar-brand" href="/index.html">
-              <img src="/img/icon.svg" alt="" width="50" height="50" class="d-inline-block align-text-center">
-            PYCON 2022</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>-->
-
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a href="/Resources/resources.html" class="nav-link active" aria-current="page" href="#">Resources</a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Schedule
-                      </a>
-
-                      <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item active" href="/Keynotes/keynotes.html">Keynotes</a></li>
-                      <li><a class="dropdown-item active" href="/Speakers/speakers.html">Speakers</a></li>
-                      <li><a class="dropdown-item active" href="/schedule/schedule_saturday.html">Schedule</a></li>
-                      </ul>
-                  </li>
-              <li class="nav-item">
-                  <a href="/Sponsors/sponsors.html" class="nav-link active" aria-current="page" >Sponsors</a>
-              </li>
-              <li class="nav-item">
-                  <a href="/scholarships/scholarships-en.html" class="nav-link active" aria-current="page" >Scholarships</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/team/team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                  <a  class="nav-link nav-primary" aria-current="page" href="https://www.eventbrite.co/e/pycon-colombia-2022-tickets-313952529467" target="blank">Tickets</a>
-              </li>
-              </ul>-->
-
-        <ul class="navbar-nav" style="margin-right: 50px;">
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              v.2023
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pycon-version">
-              <a class="dropdown-item" href="https://2022.pycon.co">v.2022</a>
-              <a class="dropdown-item" href="https://2021.pycon.co">v.2021</a>
-              <a class="dropdown-item" href="https://2020.pycon.co">v.2020</a>
-              <a class="dropdown-item" href="https://2019.pycon.co">v.2019</a>
-              <a class="dropdown-item" href="https://2018.pycon.co">v.2018</a>
-              <a class="dropdown-item" href="https://2017.pycon.co">v.2017</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="balloon-left d-xl-block" data-aos="fade-right">
+  <div class="balloon-left  d-xl-block" data-aos="fade-right">
     <img src="{{ '/static/img/general_resources/left-globe.png'|url }}" alt="Welcome to a new dimension">
   </div>
   <div class="balloon-right d-xl-block" data-aos="fade-left">
@@ -79,13 +16,16 @@
     <img src="{{ '/static/img/general_resources/right-globe2.png'|url }}" alt="Welcome to a new dimension"
       style="margin-top:500px;">
   </div>
-
   <div class="container" data-aos="zoom-in">
     <!--principal logo section-->
     <section class="section-container1">
       <div class="row section-container justify-content-center">
         <div class="principal-logo col-sm-8">
-          <img src="{{ '/static/img/general_resources/logo_main.png'|url }}" alt="Pycon Colombia 2023">
+          <h1>
+            <img src="{{ '/static/img/general_resources/logo_main.png'|url }}" alt="Pycon Colombia 2023">
+            <span>Bogotá, Colombia</span>
+            <span>June 9, 10 and 11</span>
+          </h1>
         </div>
       </div>
     </section>
@@ -94,6 +34,20 @@
     <!--banner section-->
     <div class="banner-section">
       <section class="section-container2">
+        <article class="">
+          <div class="row justify-content-center">
+            <div class="col-sm-8">
+              <div class="title-intro">
+                <a href="https://docs.google.com/forms/d/19-ujqnFIfEuCjh8SdB4uGjtK8f2Nc9Qmg09Y3DJf2E8/edit"
+                  target="blank">
+                  <img src="{{ '/static/img/general_resources/banner-section-callporposals.png'|url }}"
+                    class="img-fluid" alt="Welcome to a new dimension">
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
         <article>
           <div class="row justify-content-center">
             <div class="col-sm-10 col-xs-10">
@@ -120,11 +74,46 @@
   <!--code of conduct-section -->
   <section class="section-container">
     <div class="container col-sm-8 col-xs-8">
+      <div class="row content-container text-cards justify-content-center">
+
+        <div class="tittle-container">
+          <p>
+            • KEYNOTES SPEAKERS •
+          </p>
+        </div>
+
+        <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
+
+          <div class="keynote-img col-md-4 d-flex justify-content-center align-items-center">
+            <a href="">
+              <img src="{{ '/static/img/keynotes/1x/flabio-keynote.png'|url }}">
+            </a>
+          </div>
+
+          <div class="keynote-description col-md-8 col-sm-12 d-flex justify-content-center">
+            <div class="text-description">
+              <h2>
+                <a href="" style="color:white">Flabio Pliger</a>
+              </h2>
+              <h2>
+                Co-creator of PyScript
+              </h2>
+              <br>
+              <p>
+                Principal Software Architect at Anaconda, Inc, where he has been working for 8 years. Fabio is a
+                fellow member of the PSF and the EuroPython Society, one of the Founders of the Python Italia
+                association and former Chairman of the EuroPython Society.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-container">
+    <div class="container col-sm-8 col-xs-8">
       <div class="text-container">
         <p>
-          <span>Let the adventure of</span>
-          <span>coding begin!</span>
-          <br>
           <span>More information coming soon</span>
         </p>
       </div>

@@ -43,58 +43,85 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bd-navbar">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="{{ '/static/img/general_resources/Pycon-colombia-favicon.ico'|url }}" alt="" width="50"
+                    height="50" class="d-inline-block align-text-center">PYCON 2023
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="{{ '/resources'|url }}" class="nav-link active" aria-current="page">
+                            Resources
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Schedule
+                        </a>
+
+                        <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item disabled" href="/Keynotes/keynotes.html">Keynotes</a></li>
+                            <li><a class="dropdown-item disabled" href="/Speakers/speakers.html">Speakers</a></li>
+                            <li><a class="dropdown-item disabled" href="/schedule/schedule_saturday.html">Schedule</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/Sponsors/sponsors.html" class="nav-link disabled" aria-current="page">Sponsors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/scholarships/scholarships-en.html" class="nav-link disabled"
+                            aria-current="page">Scholarships</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="/team/team.html">Team</a>
+                    </li>
+                    <!--
+                      <li class="nav-item">
+                          <a  class="nav-link disabled nav-primary" aria-current="page" href="https://www.eventbrite.co/e/pycon-colombia-2022-tickets-313952529467" target="blank">Tickets</a>
+                      </li>
+                      -->
+                </ul>
+
+                <ul class="navbar-nav" style="margin-right: 50px;">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            v.2023
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pycon-version">
+                            <a class="dropdown-item" href="https://2022.pycon.co">v.2022</a>
+                            <a class="dropdown-item" href="https://2021.pycon.co">v.2021</a>
+                            <a class="dropdown-item" href="https://2020.pycon.co">v.2020</a>
+                            <a class="dropdown-item" href="https://2019.pycon.co">v.2019</a>
+                            <a class="dropdown-item" href="https://2018.pycon.co">v.2018</a>
+                            <a class="dropdown-item" href="https://2017.pycon.co">v.2017</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     {% block body %}{% endblock %}
 </body>
 
-<footer class="section-container">
-    <!--THIR-SECTION-->
-    <div class="third-section">
-        <div class="row">
-            <div class="col-sm-12 col-sm-offset-0 col-xs-10 ">
-                <div class="social-container ">
-                    <a href="https://twitter.com/pyconcolombia" target="_blank">
-                        <div class="social-icon ">
-                            <i class="fab fa-twitter fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.facebook.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/pyconcolombia/" target="_blank">
-                        <div class="social-icon">
-                            <i class="fab fa-instagram fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.youtube.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fab fa-youtube fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://github.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-github-alt fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.tiktok.com/@pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <p style="font-size: 18px;">© 2023 <a href="https://python.org.co" target="blank_">Python Colombia.</a> All
-                rights reserved.<br><a href="{{ '/code-of-conduct'|url }}">Code of Conduct - </a> <a
-                    href="mailto:hello@pycon.co"> hello@pycon.co</a></p>
-        </div>
-    </div>
-    <!--THIR-SECTION-END-->
-</footer>
+{% include "shared/footer.html" %}
 
 </html>
 
