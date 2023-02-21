@@ -22,7 +22,7 @@ target = ghpages+https://pyconcolombia/website-develop?cname=develop.pycon.co
 [servers.production]
 name = Production 2023
 enabled = yes
-target = ghpages+https://pyconcolombia/website-2024?cname=2024.pycon.co
+target = ghpages+https://pyconcolombia/website-2023?cname=2023.pycon.co
 
 [servers.www]
 name = Production WWW
