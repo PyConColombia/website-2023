@@ -135,7 +135,7 @@
 
 
   .first-section {
-    background-image: url(../img/general_resources/background-first-section-100.jpg);
+    background-image: url(../img/general_resources/background-first-section-100.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -144,7 +144,7 @@
   }
 
   .first-section-resources {
-    background-image: url(../img/general_resources/background-first-section-resources-100.jpg);
+    background-image: url(../img/general_resources/background-first-section-resources-100.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -153,7 +153,7 @@
   }
 
   .first-short-section {
-    background-image: url(../img/general_resources/background-short-section.jpg);
+    background-image: url(../img/general_resources/background-short-section.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -169,7 +169,7 @@
     z-index:1;
   }
   .third-section{
-    background-image: url(../img/general_resources/background-third-section-100.jpg);
+    background-image: url(../img/general_resources/background-third-section-100.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
