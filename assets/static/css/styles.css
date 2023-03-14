@@ -152,6 +152,15 @@
     z-index:2;
   }
 
+  .first-short-section {
+    background-image: url(../img/general_resources/background-short-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85vh;
+    z-index:2;
+  }
+
   .second-section{
     background-color:#1A2C74;
     background-image: url(../img/general_resources/background-second-section.png);
@@ -385,7 +394,7 @@
   .navbar .nav-primary{
     color:#4706a0;
     cursor: pointer;
-    background-color:aqua;
+    background: linear-gradient(10deg,#ba77e7,#20317e);
     border-radius:10px;
   }
 

@@ -179,15 +179,18 @@
                     <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
 
                         <div class="keynote-img col-md-4 d-flex justify-content-center align-items-center">
-                            <a href="">
+                            <a data-target="#exampleModalCenter">
                                 <img src="../website-2023/assets/static/img/keynotes/1x/flabio-keynote.png">
                             </a>
                         </div>
 
                         <div class="keynote-description col-md-8 col-sm-12 d-flex justify-content-center">
                             <div class="text-description">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Launch demo modal
+                                </button>
                                 <h2>
-                                    <a href="" style="color:white">Flabio Pliger</a>
+                                    <a style="color:white">Flabio Pliger</a>
                                 </h2>
                                 <h2>
                                     Co-creator of PyScript
@@ -198,6 +201,27 @@
                                     fellow member of the PSF and the EuroPython Society, one of the Founders of the Python Italia 
                                     association and former Chairman of the EuroPython Society.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
                         </div>
                     </div>
