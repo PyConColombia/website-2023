@@ -2,6 +2,8 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
+{% include "keynotes.html" %}
+
 <div class="first-section">
 
   <div class="balloon-left  d-none d-xl-block" data-aos="fade-right">
@@ -18,7 +20,7 @@
     <!--principal logo section-->
     <section class="section-container1">
       <div class="row section-container justify-content-center">
-        <div class="principal-logo col-sm-8">
+        <div class="principal-logo col-sm-8" style="margin-top:100px">
           <h1>
             <img src="{{ '/static/img/general_resources/logo_main.png'|url }}" alt="Pycon Colombia 2023">
             <span>Bogotá, Colombia</span>
@@ -71,7 +73,7 @@
 
   <!--code of conduct-section -->
   <section class="section-container">
-    <div class="container col-sm-8 col-xs-8">
+    <div class="container col-sm-10 col-xs-10">
       <div class="row content-container text-cards justify-content-center">
 
         <div class="tittle-container">
@@ -82,16 +84,17 @@
 
         <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
 
-          <div class="keynote-img col-md-4 d-flex justify-content-center align-items-center">
-            <a href="">
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#fabioModal">
               <img src="{{ '/static/img/keynotes/1x/flabio-keynote.png'|url }}">
             </a>
           </div>
 
-          <div class="keynote-description col-md-8 col-sm-12 d-flex justify-content-center">
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
             <div class="text-description">
+              <!-- Button trigger modal -->
               <h2>
-                <a href="" style="color:white">Fabio Pliger</a>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#fabioModal">Fabio Pliger</a>
               </h2>
               <h2>
                 Co-creator of PyScript
@@ -105,19 +108,16 @@
             </div>
           </div>
         </div>
-
-
-
         <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
-          <div class="keynote-img col-md-4 d-flex justify-content-center align-items-center order-md-last">
-            <a href="">
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center order-xl-last">
+            <a href="" data-bs-toggle="modal" data-bs-target="#catherinModal">
               <img src="{{ '/static/img/keynotes/1x/catherine-keynote.png'|url }}">
             </a>
           </div>
-          <div class="keynote-description col-md-8 col-sm-12 d-flex justify-content-center">
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
             <div class="text-description">
               <h2>
-                <a href="" style="color:white">Catherin Devlin</a>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#catherinModal">Catherin Devlin</a>
               </h2>
               <h2>
                 Data architect for Corning
@@ -126,13 +126,36 @@
               <p>
                 She got her start with Python at PyCon US 2004, and has been a Python community 
                 addict ever since, serving as PyOhio's founding chair in 2008.  She works as a data architect for Corning.  
-                She lives in the woods near Dayton, OH, USA, with her wife, two cats, and two horses; she usually has sticks 
-                in her hair.
               </p>
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
+
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#lukaszModal">
+              <img src="{{ '/static/img/keynotes/1x/lukassz-langa-keynote.png'|url }}">
+            </a>
+          </div>
+
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
+            <div class="text-description">
+              <h2>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#lukaszModal">Lukasz Langa</a>
+              </h2>
+              <h2>
+                CPython Developer in Residence
+              </h2>
+              <br>
+              <p>
+                Python 3.8 and 3.9 release manager. Gradual typing enthusiast, asynchronous programming proponent, and creator of the auto-formatter 
+                Black. ambv on Github. 
+              </p>
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
   <section class="section-container">
