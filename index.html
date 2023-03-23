@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/styles.css">
 
-    <link rel="shortcut icon" href="/static/img/general_resources/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/img/general_resources/Pycon-colombia-favicon.webp" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -47,7 +47,7 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="/static/img/general_resources/Pycon-colombia-favicon.ico" alt="" width="50"
+                <img src="/static/img/general_resources/Pycon-colombia-favicon2.ico" alt="" width="50"
                     height="50" class="d-inline-block align-text-center">PYCON 2023
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,6 +61,12 @@
                     <li class="nav-item">
                         <a href="/resources/" class="nav-link active" aria-current="page">
                             Resources
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/call-for-proposals/" class="nav-link active" aria-current="page">
+                            Call for Proposals
                         </a>
                     </li>
 
@@ -91,11 +97,9 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-current="page" href="/team/team.html">Team</a>
                     </li>
-                    <!--
-                      <li class="nav-item">
-                          <a  class="nav-link disabled nav-primary" aria-current="page" href="https://www.eventbrite.co/e/pycon-colombia-2022-tickets-313952529467" target="blank">Tickets</a>
-                      </li>
-                      -->
+                    <li class="nav-item">
+                          <a  class="nav-link active nav-primary" aria-current="page" href="https://www.eventbrite.com/e/pycon-colombia-2023-tickets-574821024157" target="blank">Tickets</a>
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav" style="margin-right: 50px;">
@@ -119,14 +123,169 @@
     </nav>
 
     
+<!-- Modal -->
+<div class="modal custom fade" id="fabioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xl-4 col-sm-12 justify-content-center">
+              <img class="rounded mx-auto d-block" src="/static/img/keynotes/1x/flabio-keynote.png">
+            </div>
+            <div class="col-xl-8 col-sm-12">
+              <h1>Fabio Pliger</h1>
+              <h2>Co-creator of PyScript</h2>
+              <h3>
+              Is the co-creator of PyScript and a Principal Software Architect at Anaconda, Inc, where he has been working for 8 years. 
+              Fabio is a fellow member of the PSF and the EuroPython Society, one of the Founders of the Python Italia association and former
+              Chairman of the EuroPython Society, where he served from 2012 to 2016. As part of his work at both associations, he helped organize and 
+              co-chair several Pycon and Europython over the years.
+              <br>
+              <br>
+              He currently lives in beautiful Austin, Texas with his family, after having spent most of his life in Italy and Brazil.
+              </h3>
+            </div>
+            <div class="row justify-content-center" style="margin-top:30px;">
+              <div class="col-1">
+                <a href="https://www.linkedin.com/in/fabiopliger" target="_blank">
+                  <i class="fa-brands fa-linkedin-in fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://github.com/fpliger" target="_blank">
+                  <i class="fa-brands fa-github fa-beat fa-2xl" style="color:#E776CF"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <div class="col-10 ratio ratio-16x9">
+                <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/KZHIfHiUm7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="padding:10px;"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
 
-<!--FIRST-SECTION-->
+<!-- Modal -->
+<div class="modal custom fade" id="catherinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xl-4 col-sm-12 justify-content-center">
+              <img class="rounded mx-auto d-block" src="/static/img/keynotes/1x/catherine-keynote.png">
+            </div>
+            <div class="col-xl-8 col-sm-12">
+              <h1>Catherin Devlin</h1>
+              <h2>Data architect for Corning</h2>
+              <h3>
+                A freak accident in 1999 transformed Catherine Devlin from a chemical engineering graduate student into a database administrator.  
+                She got her start with Python at PyCon US 2004, and has been a Python community addict ever since, serving as PyOhio's founding chair in 2008.  
+                She works as a data architect for Corning.  She lives in the woods near Dayton, OH, USA, with her wife, two cats, and two horses; 
+                she usually has sticks in her hair.
+              </h3>
+            </div>
+            <div class="row justify-content-center" style="margin-top:30px;">
+              <div class="col-1">
+                <a href="https://www.linkedin.com/in/catherinedevlin" target="_blank">
+                  <i class="fa-brands fa-linkedin-in fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://github.com/catherinedevlin" target="_blank">
+                  <i class="fa-brands fa-github fa-beat fa-2xl" style="color:#E776CF"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://github.com/catherinedevlin" target="_blank">
+                    <i class="fa-brands fa-twitter fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <div class="col-10 ratio ratio-16x9">
+                <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/Df3MvWl0duA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="padding:10px;"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal custom fade" id="lukaszModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xl-4 col-sm-12 justify-content-center">
+              <img class="rounded mx-auto d-block" src="/static/img/keynotes/1x/lukassz-langa-keynote.png">
+            </div>
+            <div class="col-xl-8 col-sm-12">
+              <h1>Lukasz Langa</h1>
+              <h2>CPython Developer in Residence</h2>
+              <h3>
+                CPython Developer in Residence, Python 3.8 and 3.9 release manager. Gradual typing enthusiast, asynchronous programming proponent, 
+                and creator of the auto-formatter Black. ambv on Github.
+                <br>
+                <br>
+                Likes immersive single-player role-playing games, Scotch whisky, and road cycling. In his free time, he produces electronic music, 
+                which includes software and hardware of his own making.
+              </h3>
+            </div>
+            <div class="row justify-content-center" style="margin-top:30px;">
+              <div class="col-1">
+                <a href="linkedin.com/in/llanga" target="_blank">
+                  <i class="fa-brands fa-linkedin-in fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://github.com/ambv" target="_blank">
+                  <i class="fa-brands fa-github fa-beat fa-2xl" style="color:#E776CF"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://twitter.com/llanga" target="_blank">
+                    <i class="fa-brands fa-twitter fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="https://lukasz.langa.pl/" target="_blank">
+                    <i class="fa-solid fa-globe fa-beat fa-2xl" style="color:#E776CF;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <div class="col-10 ratio ratio-16x9">
+                <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/MoKsBBnDHrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="padding:10px;"></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 <div class="first-section">
 
-  <div class="balloon-left  d-xl-block" data-aos="fade-right">
+  <div class="balloon-left  d-none d-xl-block" data-aos="fade-right">
     <img src="/static/img/general_resources/left-globe.png" alt="Welcome to a new dimension">
   </div>
-  <div class="balloon-right d-xl-block" data-aos="fade-left">
+  <div class="balloon-right d-none d-xl-block" data-aos="fade-left">
     <img src="/static/img/general_resources/right-globe.png" alt="Welcome to a new dimension">
   </div>
   <div class="block-right d-none d-xl-block" data-aos="fade-left">
@@ -137,7 +296,7 @@
     <!--principal logo section-->
     <section class="section-container1">
       <div class="row section-container justify-content-center">
-        <div class="principal-logo col-sm-8">
+        <div class="principal-logo col-sm-8" style="margin-top:100px">
           <h1>
             <img src="/static/img/general_resources/logo_main.png" alt="Pycon Colombia 2023">
             <span>Bogotá, Colombia</span>
@@ -157,7 +316,7 @@
               <div class="title-intro">
                 <a href="https://docs.google.com/forms/d/19-ujqnFIfEuCjh8SdB4uGjtK8f2Nc9Qmg09Y3DJf2E8/edit"
                   target="blank">
-                  <img src="/static/img/general_resources/banner-section-callporposals.png"
+                  <img src="/static/img/general_resources/banner-section-callporposals.webp"
                     class="img-fluid" alt="Welcome to a new dimension">
                 </a>
               </div>
@@ -190,7 +349,7 @@
 
   <!--code of conduct-section -->
   <section class="section-container">
-    <div class="container col-sm-8 col-xs-8">
+    <div class="container col-sm-10 col-xs-10">
       <div class="row content-container text-cards justify-content-center">
 
         <div class="tittle-container">
@@ -201,16 +360,17 @@
 
         <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
 
-          <div class="keynote-img col-md-4 d-flex justify-content-center align-items-center">
-            <a href="">
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#fabioModal">
               <img src="/static/img/keynotes/1x/flabio-keynote.png">
             </a>
           </div>
 
-          <div class="keynote-description col-md-8 col-sm-12 d-flex justify-content-center">
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
             <div class="text-description">
+              <!-- Button trigger modal -->
               <h2>
-                <a href="" style="color:white">Fabio Pliger</a>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#fabioModal">Fabio Pliger</a>
               </h2>
               <h2>
                 Co-creator of PyScript
@@ -224,7 +384,54 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center order-xl-last">
+            <a href="" data-bs-toggle="modal" data-bs-target="#catherinModal">
+              <img src="/static/img/keynotes/1x/catherine-keynote.png">
+            </a>
+          </div>
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
+            <div class="text-description">
+              <h2>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#catherinModal">Catherin Devlin</a>
+              </h2>
+              <h2>
+                Data architect for Corning
+              </h2>
+              <br>
+              <p>
+                She got her start with Python at PyCon US 2004, and has been a Python community 
+                addict ever since, serving as PyOhio's founding chair in 2008.  She works as a data architect for Corning.  
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
+
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#lukaszModal">
+              <img src="/static/img/keynotes/1x/lukassz-langa-keynote.png">
+            </a>
+          </div>
+
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
+            <div class="text-description">
+              <h2>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#lukaszModal">Lukasz Langa</a>
+              </h2>
+              <h2>
+                CPython Developer in Residence
+              </h2>
+              <br>
+              <p>
+                Python 3.8 and 3.9 release manager. Gradual typing enthusiast, asynchronous programming proponent, and creator of the auto-formatter 
+                Black. ambv on Github. 
+              </p>
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
   <section class="section-container">
