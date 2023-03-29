@@ -1,15 +1,14 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
+{%- block body -%}
 
 
 <!--FIRST-SECTION-->
 <div class="first-short-section">
 
-    <div class="balloon-left  d-xl-block" data-aos="fade-right">
+    <div class="balloon-left  d-none d-xl-block" data-aos="fade-right">
         <img src="{{ '/static/img/general_resources/left-globe.png'|url }}" alt="Welcome to a new dimension">
     </div>
-    <div class="balloon-right d-xl-block" data-aos="fade-left">
+    <div class="balloon-right d-none d-xl-block" data-aos="fade-left">
         <img src="{{ '/static/img/general_resources/right-globe.png'|url }}" alt="Welcome to a new dimension">
     </div>
     <div class="block-right d-none d-xl-block" data-aos="fade-left">
@@ -38,7 +37,7 @@
                 <article>
                     <div class="row justify-content-center">
                         <div class="col-sm-10 col-xs-10">
-                            <div class="text-container">
+                            <div class="text-container" style="margin-top:100px">
                                 <p>
                                     <span>7th edition of the Python Colombian</span>
                                     <span>conference</span>
