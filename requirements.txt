@@ -6,12 +6,11 @@ click==7.1.2
 cryptography==3.4.7
 ExifRead==2.3.2
 filetype==1.0.7
-Flask==1.1.4
 idna==2.10
-inifile==0.4
+inifile==0.4.1
 itsdangerous==1.1.0
-Jinja2==2.11.3
-Lektor==3.2.0
+Lektor==3.3.8
+jinja2<3.1.0
 MarkupSafe==2.0.1
 mistune==0.8.4
 pycparser==2.20
