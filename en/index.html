@@ -325,6 +325,58 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal custom fade" id="debModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12 justify-content-center">
+            <img class="rounded mx-auto d-block" src="/static/img/keynotes/1x/deb-keynote.png">
+          </div>
+          <div class="col-xl-8 col-sm-12">
+            <h1>Deb Nicholson</h1>
+            <h2>Executive Director at the Python Software Foundation</h2>
+            <h3>
+              Deb Nicholson is the Executive Director at the Python Software Foundation, the non-profit steward of the Python 
+              programming language. She is a free software policy expert and a passionate community advocate. After years of 
+              local organizing on free speech, marriage equality, government transparency and access to the political process, 
+              she joined the free software movement in 2006. She has previously served the open source ecosystem through her 
+              work at the Open Source Initiative, Software Freedom Conservancy, and the Open Invention Network. She’s won the 
+              O’Reilly Open Source Award and the Award for the Advancement of Free Software for her efforts to broaden the free 
+              and open source software movement. She is also a founding organizer of the Seattle GNU/Linux Conference, an annual 
+              event dedicated to surfacing new voices and welcoming new people to the free software community. She lives with her 
+              partner and her lucky black cat in Cambridge, Massachusetts, USA.
+              <br>
+            </h3>
+          </div>
+          <div class="row justify-content-center" style="margin-top:30px;">
+            <div class="col-1">
+              <a href="https://www.linkedin.com/in/denicholson" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-beat fa-2xl" style="color:#E776CF;"></i>
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="https://twitter.com/baconandcoconut" target="_blank">
+                  <i class="fa-brands fa-twitter fa-beat fa-2xl" style="color:#E776CF;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+          <div class="col-10 ratio ratio-16x9">
+              <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/w8MayUKMre4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="padding:10px;"></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="first-section">
 
   <div class="balloon-left  d-none d-xl-block" data-aos="fade-right">
@@ -367,12 +419,12 @@
               </div>
               <div class="carousel-inner img-fluid">
                 <div class="carousel-item active">
-                  <a href="https://docs.google.com/forms/d/19-ujqnFIfEuCjh8SdB4uGjtK8f2Nc9Qmg09Y3DJf2E8/edit"target="blank">
+                  <a href="https://www.eventbrite.com/e/pycon-colombia-2023-tickets-574821024157"target="blank">
                     <img src="/static/img/carousel/carousel-section-1.png" class="img-fluid d-block w-auto" alt="..." style="margin:auto">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://www.eventbrite.com/e/pycon-colombia-2023-tickets-574821024157"target="blank">
+                  <a>
                     <img src="/static/img/carousel/carousel-section-2.png" class="img-fluid d-block w-auto" alt="..." style="margin:auto">
                   </a>
                 </div>
@@ -463,10 +515,10 @@
           </div>
           <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
             <div class="text-description">
-              <h2>
+              <h2 class="text-end">
                 <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#catherinModal">Catherin Devlin</a>
               </h2>
-              <h2>
+              <h2 class="text-end">
                 Data architect for Corning
               </h2>
               <br>
@@ -479,7 +531,6 @@
         </div>
 
         <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
-
           <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
             <a href="" data-bs-toggle="modal" data-bs-target="#lukaszModal">
               <img src="/static/img/keynotes/1x/lukassz-langa-keynote.png">
@@ -510,11 +561,11 @@
             </a>
           </div>
           <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
-            <div class="text-description">
-              <h2>
-                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#gabrielaModal">Gabriela Coleman (Biella)</a>
+            <div class="text-description" style="justify-content:left">
+              <h2 class="text-end">
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#gabrielaModal" >Gabriela Coleman (Biella)</a>
               </h2>
-              <h2>
+              <h2 class="text-end">
                 Professor at Harvard University
               </h2>
               <br>
@@ -526,6 +577,30 @@
           </div>
         </div>
 
+        <div class="row keynote-container col-sm-10 col-xs-10" style="margin-top:50px;">
+          <div class="keynote-img col-xl-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <a href="" data-bs-toggle="modal" data-bs-target="#debModal">
+              <img src="/static/img/keynotes/1x/deb-keynote.png">
+            </a>
+          </div>
+
+          <div class="keynote-description col-xl-8 col-sm-12 d-flex justify-content-center">
+            <div class="text-description">
+              <h2>
+                <a href="" style="color:white" data-bs-toggle="modal" data-bs-target="#debModal">Deb Nicholson</a>
+              </h2>
+              <h2>
+                Executive Director at the Python Software Foundation
+              </h2>
+              <br>
+              <p>
+                She is a free software policy expert and a passionate community advocate. After years of local organizing 
+                on free speech, marriage equality, government transparency and access to the political process, she joined 
+                the free software movement in 2006.
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
   <section class="section-container">
@@ -555,21 +630,39 @@
     </div>
     <div class="row">
       <div class="col d-flex justify-content-center">
-        <a href="">
+        <a href="https://www.javeriana.edu.co/inicio" target="blank">
           <img class="img-fluid" src="/static/img/Sponsors/javeriana-sponsor.png">
         </a>
       </div>
     </div>
 
-    <div class="d-flex flex-row justify-content-evenly">
-      <div class="">
-        <a href="">
+    <div class="d-flex flex-row justify-content-evenly" style="margin-top:50px">
+      <div class="col-4">
+        <a href="https://www.elastic.co/es/" target="blank">
           <img class="img-fluid" src="/static/img/Sponsors/elastic-sponsor.png">
         </a>
       </div>
-      <div class="">
-        <a href="">
+      <div class="col-4">
+        <a href="https://www.endava.com/" target="blank">
           <img class="img-fluid" src="/static/img/Sponsors/endava-sponsor.png">
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://bold.co" target="blank">
+          <img class="img-fluid" src="/static/img/Sponsors/bold-sponsor.png">
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-evenly"style="margin-top:50px">
+      <div class="col-4">
+        <a href="https://monoku.com/" target="blank">
+          <img class="img-fluid" src="/static/img/Sponsors/monoku-sponsor.png">
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://www.teaminternational.com/" target="blank">
+          <img class="img-fluid" src="/static/img/Sponsors/team-sponsor.png">
         </a>
       </div>
     </div>
