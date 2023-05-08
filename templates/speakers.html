@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 {%- block body -%}
+{% include "speakers-modal.html"%}
 <div class="speakers-section d-flex justify-content-center">
-    <div class="col-10 speakers-container" style="margin-top:130px">
+    <div class="col-8 speakers-container" style="margin-top:130px">
         <div class="speakers-tittle">
             <h1 style="color:#1E2C70;font-size: 40px;font-weight: 700;letter-spacing: 3px;maring:auto;text-align:center">• SPEAKERS •<h1>
             <h2 style="color:#FFFFFF;font-size: 25px;font-weight:;letter-spacing: 3px;maring:auto;text-align:center">Learn more about the people who are part of Pycon 2023<h2>
@@ -9,51 +10,171 @@
         <div class="speakers-box" style="margin-top:50px">
             <div class="row">
                 <div class="col" style="margin-top:20px">
-                    <div class="speaker-img d-flex justify-content-center align-items-center">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#debModal">
-                          <img src="{{ '/static/img/speakers/prueba-speaker.png'|url }}">
+                    <div class="speakers-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#alvaroMoyaModal">
+                          <img src="{{ '/static/img/speakers/alvaro-moya-speaker.png'|url }}">
                         </a>
                     </div>
                     <div class="speaker-name" style="margin-top:10px">
-                        <h1 style="color:#1E2C70;font-size: 35px;font-weight: 700;maring:auto;text-align:center">Ivan Roa</h1>
-                        <h2 style="color:#1E2C70;font-size: 23px;maring:auto;text-align:center;margin-top:-10px">UX/UI Designer</h2>
+                        <h1 style="">Alvaro Moya</h1>
+                        <h2 style="">LIDR.co</h2>
+                    </div>
+                </div>
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#felipeGrandaModal">
+                          <img src="{{ '/static/img/speakers/felipe-granda-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Felipe Granda</h1>
+                        <h2 style="">Addi</h2>
+                    </div>
+                </div>
+                <div class="col" style="margin-top:20px">
+                    <div class="speakers-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#julianTinocoModal">
+                          <img src="{{ '/static/img/speakers/julian-tinoco-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Julian Tinoco</h1>
+                        <h2 style="">GoTo</h2>
+                    </div>
+                </div>
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#felixMinoModal">
+                          <img src="{{ '/static/img/speakers/felix-mino-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Félix Miño</h1>
+                        <h2 style="">Stack Builders</h2>
+                    </div>
+                </div>
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#valentinaArizaModal">
+                          <img src="{{ '/static/img/speakers/valentina-ariza-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Valentina Ariza</h1>
+                        <h2 style="">Dataknow</h2>
                     </div>
                 </div>
 
                 <div class="col" style="margin-top:20px">
-                    <div class="speakers-img d-flex justify-content-center align-items-center">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#debModal">
-                          <img src="{{ '/static/img/speakers/prueba-speaker.png'|url }}">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#lauraLopezModal">
+                          <img src="{{ '/static/img/speakers/laura-lopez-speaker.png'|url }}">
                         </a>
                     </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Laura Lopez</h1>
+                        <h2 style="">Accenture</h2>
+                    </div>
                 </div>
+
                 <div class="col" style="margin-top:20px">
-                    <div class="speakers-img d-flex justify-content-center align-items-center">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#debModal">
-                          <img src="{{ '/static/img/speakers/prueba-speaker.png'|url }}">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#cristianTayupantaModal">
+                          <img src="{{ '/static/img/speakers/cristian-tayupanta-speaker.png'|url }}">
                         </a>
                     </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Christian Tayupanta</h1>
+                        <h2 style="">FUNPYTHON ECUADOR</h2>
+                    </div>
                 </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#juanAlzateModal">
+                          <img src="{{ '/static/img/speakers/juan-alzate-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Juan Alzate</h1>
+                        <h2 style="">Hourly</h2>
+                    </div>
+                </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#jorgePazModal">
+                          <img src="{{ '/static/img/speakers/jorge-paz-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Jorge De Paz Rivera</h1>
+                        <h2 style="">BAC Credomatic </h2>
+                    </div>
+                </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#valentinaChaparroModal">
+                          <img src="{{ '/static/img/speakers/valentina-chaparro-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Valentina Chaparro</h1>
+                        <h2 style="">Factored</h2>
+                    </div>
+                </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#danielBarreiroModal">
+                          <img src="{{ '/static/img/speakers/daniel-barreiro-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Daniel Barreiro</h1>
+                        <h2 style="">Appgate</h2>
+                    </div>
+                </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#danielAndradeModal">
+                          <img src="{{ '/static/img/speakers/daniel-andrade-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Daniel Andrade</h1>
+                        <h2 style="">Icfes - Data Scientist</h2>
+                    </div>
+                </div>
+
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#jenniferVelezModal">
+                          <img src="{{ '/static/img/speakers/jennifer-velez-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Jeniffer Velez</h1>
+                        <h2 style="">RSG-Colombia</h2>
+                    </div>
+                </div>
+                <!--juan Caballero
+                <div class="col" style="margin-top:20px">
+                    <div class="speaker-img d-flex justify-content-center align-items-center">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#jenniferVelezModal">
+                          <img src="{{ '/static/img/speakers/jennifer-velez-speaker.png'|url }}">
+                        </a>
+                    </div>
+                    <div class="speaker-name" style="margin-top:10px">
+                        <h1 style="">Juan Caballero</h1>
+                        <h2 style="">Monadical</h2>
+                    </div>
+                </div>
+                -->
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
 </div>
 {% endblock %}

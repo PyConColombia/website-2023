@@ -2,7 +2,11 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-{% include "keynotes.html" %}
+{% include "keynotes-modal.html"%}
+{% include "sponsors-modal.html"%}
+
+
+
 
 <div class="first-section">
 
@@ -46,12 +50,12 @@
               </div>
               <div class="carousel-inner img-fluid">
                 <div class="carousel-item active">
-                  <a href="https://www.eventbrite.com/e/pycon-colombia-2023-tickets-574821024157"target="blank">
+                  <a href="https://www.eventbrite.com/e/pycon-colombia-2023-tickets-574821024157" target="blank">
                     <img src="{{ '/static/img/carousel/carousel-section-1.png'|url }}" class="img-fluid d-block w-auto" alt="..." style="margin:auto">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnC1Hnvep1FVUQXVK_kWFOfoHkQHiz2MMXYgS7rn7g49aKBw/viewform" target="blank">
                     <img src="{{ '/static/img/carousel/carousel-section-2.png'|url }}" class="img-fluid d-block w-auto" alt="..." style="margin:auto">
                   </a>
                 </div>
@@ -255,22 +259,22 @@
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <div class="col-4 d-flex justify-content-center">
         <a href="https://www.javeriana.edu.co/inicio" target="blank">
           <img class="img-fluid" src="{{ '/static/img/Sponsors/javeriana-sponsor.png'|url }}">
         </a>
       </div>
     </div>
 
-    <div class="d-flex flex-row justify-content-evenly" style="margin-top:50px">
+    <div class="d-flex flex-row justify-content-evenly" style="margin-top:0px">
       <div class="col-4">
-        <a href="https://www.elastic.co/es/" target="blank">
+        <a href="" data-bs-toggle="modal" data-bs-target="#elasticModal">
           <img class="img-fluid" src="{{ '/static/img/Sponsors/elastic-sponsor.png'|url }}">
         </a>
       </div>
       <div class="col-4">
-        <a href="https://www.endava.com/" target="blank">
+        <a data-bs-toggle="modal" data-bs-target="#endavaModal">
           <img class="img-fluid" src="{{ '/static/img/Sponsors/endava-sponsor.png'|url }}">
         </a>
       </div>
@@ -281,15 +285,49 @@
       </div>
     </div>
 
-    <div class="d-flex flex-row justify-content-evenly"style="margin-top:50px">
+    <div class="d-flex flex-row justify-content-evenly" style="margin-top:0px">
       <div class="col-4">
-        <a href="https://monoku.com/" target="blank">
+        <a data-bs-toggle="modal" data-bs-target="#softserveModal">
+          <img class="img-fluid" src="{{ '/static/img/Sponsors/softserve-sponsor.png'|url }}">
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-evenly"style="margin-top:0px">
+      <div class="col-4">
+        <a href="" data-bs-toggle="modal" data-bs-target="#monokuModal">
           <img class="img-fluid" src="{{ '/static/img/Sponsors/monoku-sponsor.png'|url }}">
         </a>
       </div>
       <div class="col-4">
-        <a href="https://www.teaminternational.com/" target="blank">
+        <a href="" data-bs-toggle="modal" data-bs-target="#teamModal">
           <img class="img-fluid" src="{{ '/static/img/Sponsors/team-sponsor.png'|url }}">
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-evenly" style="margin-top:0px">
+      <div class="col-4">
+        <a href="https://www.nearsure.com/" target="blank">
+          <img class="img-fluid" src="{{ '/static/img/Sponsors/nearsure-sponsor.png'|url }}">
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://www.tecu.co/" target="blank">
+          <img class="img-fluid" src="{{ '/static/img/Sponsors/tecu-sponsor.png'|url }}">
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://monadical.com/" target="blank">
+          <img class="img-fluid" src="{{ '/static/img/Sponsors/monadical-sponsor.png'|url }}">
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-evenly" style="margin-top:0px">
+      <div class="col-4">
+        <a href="https://vanhack.com/" target="blank">
+          <img class="img-fluid" src="{{ '/static/img/Sponsors/vanhack-partner.png'|url }}">
         </a>
       </div>
     </div>
