@@ -1,0 +1,392 @@
+{% extends "layout.html" %}
+{%- block body -%}
+{% include "speakers-modal.html"%}
+{% include "keynotes-modal.html"%}
+<div class="speakers-section d-flex justify-content-center">
+
+    <div class="col-9 speakers-container" style="margin-top:130px">
+
+
+        <div class="row speakers-tittle d-flex justify-content-center">
+            <div class="col-12">
+                <h1 style="color:#1E2C70;font-size: 40px;font-weight: 700;letter-spacing: 3px;maring:auto;text-align:center">• SCHEDULE •</h1>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center" style="margin-top: 50px;">
+                <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group" style="background:#1E2C70;border-radius: 20px;">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked >
+                    <label class="btn btn-outline-primary" for="btnradio1" style="background:#1E2C70;border-radius: 20px 0px 0px 20px;border:none;padding: 10px 24px">Friday 09</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-light" for="btnradio2" style="padding: 10px 24px">Saturday 10</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-light" for="btnradio3"style="border-radius: 0px 20px 20px 0px;border:none;padding: 10px 24px">Sunday 11</label>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="schedule-box" style="margin-top:50px; margin-bottom:50px">
+            
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:50px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >7:00</h1>
+                        <h2 style="">Register</h2>
+                        <h3 style="">Attenders Arrival - Kits Delivery</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex                                justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >8:20</h1>
+                        <h2 style="">Opening</h2>
+                        <h3 style="">Organizers word´s</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >8:30</h1>
+                        <h2 style="">Pontificia Universidad Javeriana</h2>
+                        <h3 style="">rector's words</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >9:00</h1>
+                        <h2><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#lukaszModal">Lukasz Langa</a></h2>
+                        <h3 style="">Keynote Speaker</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >10:00</h1>
+                        <h2 style="">Breakfast</h2>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon left ">
+                        <h1 style="" >10:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#felipeGrandaModal">Felipe Granda</a></h2>
+                        <h3 style="">A high-performing software engineering team is united by a shared
+                            vision and purpose. [ES]</h3>
+                        <label class="label-talk">COMMUNITY</label>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="schedule-icon center">
+                        <h1 style="" >10:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#jaimeAcevedoModal">Jaime Acevedo</a></h2>
+                        <h3 style="">Descubre cómo los Graph Neural Networks están revolucionando el mundo del AI. [ES]</h3>
+                        <label class="label-talk">MACHINE LEARNING</label>
+                        <h4 style="">Auditorio Facultad de Ciencias <br>(54-P400)</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon right">
+                        <h1 style="" >10:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#sebastianAriasModal">Sebastian Arias</a></h2>
+                        <h3 style="">Revive Your Legacy Code: Using Property-based Testing in Python to Refactor with Confidence [EN]</h3>
+                        <label class="label-talk">DEVELOPMENT</label>
+                        <h4 style="">Auditorio Pablo VI <br>(41-P100)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon left ">
+                        <h1 style="" >11:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#oscarRiojasModal">Oscar Riojas</a></h2>
+                        <h3 style="">Python y Blockchain caso Polkadot.[ES]</h3>
+                        <label class="label-talk">BLOCKCHAIN</label>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="schedule-icon center">
+                        <h1 style="" >11:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#juanRuaModal">Juan Pasos Rua</a> y <a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#cristhianGarciaModal">Cristhian Garcia</a></h2>
+                        <h3 style="">GraphMatch: Interacción social en tiempo real con tecnología de grafos, modelos generativos de lenguaje y python[ES]</h3>
+                        <label class="label-talk">MACHINE LEARNING</label>
+                        <h4 style="">Auditorio Facultad de Ciencias <br>(54-P400)</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon right">
+                        <h1 style="" >11:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#tbdModal">TBD</a></h2>
+                        <h3 style="">TBD</h3>
+                        <label class="label-talk">TBD</label>
+                        <h4 style="">Auditorio Pablo VI <br>(41-P100)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >12:00</h1>
+                        <h2 style="">Lunch Time</h2>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon left ">
+                        <h1 style="" >13:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#andresDuqueModal">Andrés Duque</a></h2>
+                        <h3 style="">Optimizando DB bottlenecks de 700 queries a 1 en Django.[ES]</h3>
+                        <label class="label-talk">WEB DEVELOPMENT</label>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="schedule-icon center">
+                        <h1 style="" >13:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#valentinaChaparroModal">Valentina Chaparro</a></h2>
+                        <h3 style="">Find Love Watching Movies[EN]</h3>
+                        <label class="label-talk">MACHINE LEARNING</label>
+                        <h4 style="">Auditorio Facultad de Ciencias <br>(54-P400)</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon right">
+                        <h1 style="" >13:30</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#juanAlzateModal">Juan Alzate</a></h2>
+                        <h3 style="">Demystifying Liskov Substitution Principle with our most loved programming language: Python[ES]</h3>
+                        <label class="label-talk">DEVELOPMENT</label>
+                        <h4 style="">Auditorio Pablo VI <br>(41-P100)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon left ">
+                        <h1 style="" >14:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#joelIbacetaModal">Joel Ibaceta</a></h2>
+                        <h3 style="">Aprovechando la potencia de Python en el navegador con WebAssembly.[ES]</h3>
+                        <label class="label-talk">WEB DEVELOPMENT</label>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="schedule-icon center">
+                        <h1 style="" >14:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#cristianGarciaModal">Cristian Garcia</a></h2>
+                        <h3 style="">Deep Learning at scale with JAX: a tour of parallelism in JAX.[EN]</h3>
+                        <label class="label-talk">MACHINE LEARNING</label>
+                        <h4 style="">Auditorio Facultad de Ciencias <br>(54-P400)</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon right">
+                        <h1 style="" >14:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#leandroColomboModal">Leandro E. Colombo</a></h2>
+                        <h3 style="">Dependency management is not easy...but not impossible.[ES]</h3>
+                        <label class="label-talk">DEVELOPMENT</label>
+                        <h4 style="">Auditorio Pablo VI <br>(41-P100)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >15:00</h1>
+                        <h2 style="">Coffee Break</h2>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon left ">
+                        <h1 style="" >15:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#juanCaballeroModal">Juan Caballero</a></h2>
+                        <h3 style="">Large Scale Django Lessons: Architecting your monolith from day one for scale.[ES]</h3>
+                        <label class="label-talk">WEB DEVELOPMENT</label>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="schedule-icon center">
+                        <h1 style="" >15:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#cristianGarciaModal">Cristian Garcia</a></h2>
+                        <h3 style="">Deep Learning at scale with JAX: a tour of parallelism in JAX.[EN]</h3>
+                        <label class="label-talk">MACHINE LEARNING</label>
+                        <h4 style="">Auditorio Facultad de Ciencias <br>(54-P400)</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-4 col-xl-4" style="">
+                    <div class="schedule-icon right">
+                        <h1 style="" >15:20</h1>
+                        <h2 style=""><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#juanAlzateModal">Leandro E. Colombo</a></h2>
+                        <h3 style="">Dependency management is not easy...but not impossible.[ES]</h3>
+                        <label class="label-talk">DEVELOPMENT</label>
+                        <h4 style="">Auditorio Pablo VI <br>(41-P100)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >16:00</h1>
+                        <h2 style="">Coffee Break</h2>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >16:30</h1>
+                        <h2 style="">Lightning Talks</h2>
+                        <h3 style="">Form</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >17:00</h1>
+                        <h2><a class="name-schedule" href="" data-bs-toggle="modal" data-bs-target="#catherineDevlinModal">Catherine Devlin</a></h2>
+                        <h3 style="">Keynote Speaker</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >18:00</h1>
+                        <h2 style="">Closing</h2>
+                        <h3 style="">Organizers Word´s</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row schedule-card d-flex justify-content-center" style="margin-top:30px">
+                <div class="icon col-sm-12 col-xs-1 col-md-11 col-lg-1 col-xl-1" >
+                    <img src="{{ '/static/img/schedule/register-icon.png'|url }}"/>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 col-xl-11">
+                    <div class="schedule-icon">
+                        <h1 style="" >18:00</h1>
+                        <h2 style="">Night Activity</h2>
+                        <h3 style="">More information WhatsApp Pycon Colombia 2023</h3>
+                        <h4 style="">Auditorio Felix Restrepo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

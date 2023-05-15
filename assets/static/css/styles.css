@@ -1,14 +1,62 @@
 /* *{border: solid 1px red;}  */
 
+.schedule-card{
+  background-color: rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 30px;
+}
+.name-schedule{
+  color: #fff;
+}
+
+.schedule-icon h1{
+  font-size:25px;
+  font-family: 'Work Sans', sans-serif;font-weight: 700;
+  color:#1E2C70;
+  margin-bottom: 0
+}
+
+.schedule-icon h2{
+  font-size:20px;
+  font-family: 'Work Sans', sans-serif;font-weight: 700;
+  color:white;
+  margin-bottom: 0
+}
+
+.schedule-icon h3{
+  font-size:15px;
+  font-family: 'Work Sans', sans-serif;
+  color:white;
+  margin-bottom: 0
+}
+
+.schedule-icon h4{
+  font-size:15px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color:#1E2C70;
+  margin-bottom: 0
+}
+
+.left {
+  padding: 0px 50px 0px 0px
+}
+
+.right{
+  padding: 0px 0px 0px 50px
+}
+
 .label-talk {
+  display: block;
+  text-align: center;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   font-style: italic;
-  background-color: rgba(255, 255,255,0.5);
+  background-color: rgba(255, 255,255,0.3);
   border-radius: 12px;
   padding:0px 20px 0px 20px;
-  margin: 4px 2px;
+  margin: 8px 2px;
   color:white;
 }
 
@@ -64,12 +112,9 @@
 }
 
 .speakers-section{
-  background: rgb(255,97,191);
-  background: linear-gradient(180deg, rgba(255,97,191,1) 0%, rgba(255,193,48,1) 100%);
+  background: url(../img/general_resources/clouds-img.png),linear-gradient(180deg, rgba(255,97,191,1) 0%, rgba(255,193,48,1) 100%);
+  /*padding-bottom:50px;*/
 }
-
-
-
 .card-body a {
   font-family: "Work-sans", sans-serif,;
   color: #fff;
@@ -488,11 +533,15 @@
 
   .balloon-left img {
     position:absolute;
-    left: 0%;
     z-index: 999;
     margin-top: 400px;
   }
 
+  .cloud img {
+    position:absolute;
+    left: 0%;
+    margin-top: 400px;
+  }
   .balloon-right img {
     position: absolute;
     right: 0%;
@@ -508,6 +557,35 @@
 
 
   @media (max-width: 991px) {
+    .left {
+      padding: 0px 0px 0px 0px
+    }
+    
+    .right{
+      padding: 0px 0px 0px 0px
+    }
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .schedule-icon h1{
+    text-align: center;
+    margin-top:30px;
+  }
+
+  .schedule-icon h2{
+    text-align: center;
+  }
+
+  .schedule-icon h3{
+    text-align: center;
+  }
+
+  .schedule-icon h4{
+    text-align: center;
+  }
 
     .section-container1{
       margin: top 30px;;
