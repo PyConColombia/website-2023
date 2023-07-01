@@ -1,46 +1,78 @@
-<footer class="footer-section" style="">
+<footer class="footer-section">
+    {% include 'footer/links.html' %}
+
     <!--THIR-SECTION-->
     <div class="third-section" style="padding-bottom:70px;background:#221642">
-        <div class="row">
-            <div class="col-sm-12 col-sm-offset-0 col-xs-10 ">
-                <div class="social-container ">
-                    <a href="https://twitter.com/pyconcolombia" target="_blank">
-                        <div class="social-icon ">
-                            <i class="fab fa-twitter fa-lg"></i>
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-logo-container">
+                        <img src="{{ '/static/img/general_resources/logo_main.png'|url }}" alt="Pycon Colombia 2023"
+                            class="logo-footer">
+                    </div>
+                    <div class="row">
+                        <div class="footer-social">
+                            <a href="https://twitter.com/pyconcolombia" target="_blank">
+                                <div class="social-icon ">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/pyconcolombia" target="_blank">
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/pyconcolombia/" target="_blank">
+                                <div class="social-icon">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/pyconcolombia" target="_blank">
+                                <div class="social-icon">
+                                    <i class="fab fa-youtube fa-lg"></i>
+                                </div>
+                            </a>
+                            <a href="https://github.com/pyconcolombia" target="_blank">
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-github-alt fa-lg"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.tiktok.com/@pyconcolombia" target="_blank">
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="https://www.facebook.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/pyconcolombia/" target="_blank">
-                        <div class="social-icon">
-                            <i class="fab fa-instagram fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.youtube.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fab fa-youtube fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://github.com/pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-github-alt fa-lg"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.tiktok.com/@pyconcolombia" target="_blank">
-                        <div class="social-icon">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                    </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="footer-section-legal">
+                        <span class="footer-section-title">Legales</span>
+                        <hr class="footer-separator" />
+                        <ul>
+                            <li><a data-bs-toggle="modal" data-bs-target="#exampleModal">Acta de constitución</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Renovación ESAL</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Rut</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Camara de comercio</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Estatutos</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Certificación DIAN 2023</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Fundadores Pycon</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Cargos gerenciales</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="">Donantes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
                 </div>
             </div>
         </div>
 
-        <div class="row" style="">
+        <div class="row">
             <p style="font-size: 18px;">© 2023 <a href="https://python.org.co" target="blank_">Python Colombia.</a> All
-                rights reserved.<br><a href="{{ '/code-of-conduct'|url }}">Code of Conduct - </a><a href="{{ '/code-of-conduct-procedure'|url }}">Code of Conduct Enforcement Procedure </a><br><a href="{{ '/health-and-safety-policy'|url }}">Health & Safety Policy</a><br><a
+                rights reserved.<br><a href="{{ '/code-of-conduct'|url }}">Code of Conduct - </a><a
+                    href="{{ '/code-of-conduct-procedure'|url }}">Code of Conduct Enforcement Procedure </a><br><a
+                    href="{{ '/health-and-safety-policy'|url }}">Health & Safety Policy</a><br><a
                     href="mailto:hello@pycon.co"> hello@pycon.co</a></p>
         </div>
     </div>
