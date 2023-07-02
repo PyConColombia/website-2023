@@ -535,8 +535,9 @@
     color: white;
   }
 
-  footer .footer-content ul li a:hover {
+  footer .footer-content .footer-section-legal ul li a:hover {
     color: #4706a0;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
 
   footer .logo-footer {
@@ -576,6 +577,31 @@
 
   footer .footer-content .footer-logo-container {
     padding: 10px auto;
+  }
+
+  /* Modal */
+  .modal-docs-content .modal-docs-header {
+    background-color: #E776CF;
+    text-transform: uppercase;
+  }
+
+  .modal-docs-content .modal-docs-header .modal-docs-title {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .modal-docs-content .modal-docs-header .btn-modal {
+      color: white;
+      cursor: pointer;
+      font-size: 25px;
+      padding: 5px;
+  }
+
+  .modal-docs-content .modal-docs-body {
+    background-color: rgba(54, 36, 106, 1);
+    border-radius: 0 0 5px 5px;
+    color: white;
   }
 
   .navbar {
