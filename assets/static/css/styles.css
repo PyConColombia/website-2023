@@ -533,9 +533,10 @@
   footer .footer-content ul li a {
     cursor: pointer;
     color: white;
+    text-decoration: none;
   }
 
-  footer .footer-content .footer-section-legal ul li a:hover {
+  footer .footer-content .footer-section ul li a:hover {
     color: #4706a0;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
@@ -565,7 +566,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
 
-  footer .footer-content .footer-section-legal {
+  footer .footer-content .footer-section {
     padding: 10px 20px;
   }
 
@@ -575,8 +576,9 @@
     font-weight: 700;
   }
 
-  footer .footer-content .footer-logo-container {
-    padding: 10px auto;
+  footer .footer-content .footer-social {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Modal */
