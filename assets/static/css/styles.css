@@ -112,7 +112,7 @@
 }
 
 .speakers-section{
-  background: url(../img/general_resources/clouds-img.png),linear-gradient(180deg, rgba(255,97,191,1) 0%, rgba(255,193,48,1) 100%);
+  background: url(../img/general_resources/clouds-img.webp),linear-gradient(180deg, rgba(255,97,191,1) 0%, rgba(255,193,48,1) 100%);
   /*padding-bottom:50px;*/
 }
 .card-body a {
@@ -278,7 +278,7 @@
 
   .second-section{
     background-color:#1A2C74;
-    background-image: url(../img/general_resources/background-second-section.png);
+    background-image: url(../img/general_resources/background-second-section.webp);
     padding-top: 60px;
     padding-bottom: 60px;
     z-index:1;
